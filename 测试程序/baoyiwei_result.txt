@@ -1,0 +1,53 @@
+按顺序分别输入var_1,var_2,char_1,char_2的值。
+
+分支1：
+输入：
+var_1,var_2中有不是整数的，或char_1,char_2中有不是字符的
+输出：
+报错
+
+
+分支3:：
+输入：
+var_1为0或负数，var_2为任意支持的整数，char_1为c1，char_2为c2，（c1、c2是符合文法的任意单个字符）
+输出（'n:'为行数，为了方便说明而标注，实际输出没有该项）：
+1 :Hello world!
+2 :var_1 is not positive
+3 :var_2 is 5
+4 :sum of ary is 85
+5 :factorial of 3 is 6
+6 :char_1 is *c1,char_2 is *c2,sum of char_1 and char_2 is *s
+7 :char c = c,count down 3
+8 :char c = c,count down 2
+9 :char c = c,count down 1
+10:c times pai is 297
+11:ascii no.70 is F
+
+
+分支2：
+输入：
+var_1为正数，var_2为任意支持的整数，char_1为c1，char_2为c2，（c1、c2是符合文法的任意单个字符）
+输出（'n:'为行数，为了方便说明而标注，实际输出没有该项）：
+1 :Hello world!
+2 :var_1 is positive
+3 :var_2 is 5
+4 :sum of ary is 85
+5 :factorial of 3 is 6
+6 :char_1 is *c1,char_2 is *c2,sum of char_1 and char_2 is *s
+7 :char c = c,count down 3
+8 :char c = c,count down 2
+9 :char c = c,count down 1
+10:c times pai is 297
+11:ascii no.70 is F
+
+说明：
+第6行中的*c1,*c2为输入的c1、c2，*s为c1+c2的值
+输出的第一行测试了直接写入字符串语句的
+输出的第二行根据var_1是否为正数输出相应信息，测试了读入int，if条件语句的正确性
+输出的第三行测试了while循环以及表达式计算的正确性
+输出的第四行测试了输出表达式，以及while循环、数组元素赋值以及调用的正确性
+输出的第五行测试了有参数的函数声明以及调用，以及函数的递归调用的正确性
+输出的第六行测试了字符读入，字符变量输出，以及字符计算的正确性
+输出的第七行到第十行测试了无返回值的函数的声明以及调用的正确性，无参数的函数的声明以及调用，while循环，字符计算的正确性。
+输出的第十行测试了返回值为char类型的函数的正确性。
+变量声明、主函数等基础语法成分的测试包含在以上内容中，不再单独列出 

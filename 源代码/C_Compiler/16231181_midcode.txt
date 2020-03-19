@@ -1,0 +1,221 @@
+const	int	512	max_num
+func	int		factorial
+para	int		n
+<=	n	1	$0
+BZ	  	  	LAB0
+ret			1
+GOTO	  	  	LAB1
+lab:			LAB0
+lab:			LAB1
+minu	n	1	$1
+PUSH			$1
+call	factorial		$2
+mul	n	$2	$3
+ret			$3
+end			factorial
+func	int		mod
+para	int		x
+para	int		y
+div	x	y	$4
+mul	$4	y	$5
+minu	x	$5	$6
+=	$6		x
+ret			x
+end			mod
+func	void		swap
+para	int		x
+para	int		y
+int			temp
+prt	0		int
+prt		x	int
+prt	1		int
+prt		y	int
+=	x		temp
+=	y		x
+=	temp		y
+prt	2		int
+prt		x	int
+prt	3		int
+prt		y	int
+end			swap
+func	void		complete_num
+para	int		val
+ints		128	k
+int			i
+int			j
+int			n
+int			s
+int			x1
+int			m
+int			k2
+int			h
+int			leap
+int			x2
+int			a
+int			b
+int			c
+=	val		j
+lab:			LAB2
+<	j	max_num	$7
+BZ	  	  	LAB3
+minu	0	1	$8
+=	$8		n
+=	j		s
+=	1		i
+lab:			LAB4
+<	i	j	$9
+BZ	  	  	LAB5
+div	j	i	$10
+mul	$10	i	$11
+=	$11		x1
+PUSH			j
+PUSH			i
+call	mod		$12
+==	$12	0	$13
+BZ	  	  	LAB6
+plus	n	1	$14
+=	$14		n
+minu	s	i	$15
+=	$15		s
+>=	n	128	$16
+BZ	  	  	LAB8
+prt	4		int
+GOTO	  	  	LAB9
+lab:			LAB8
+lab:			LAB9
+<	n	128	$17
+BZ	  	  	LAB10
+[]=	i	n	k
+GOTO	  	  	LAB11
+lab:			LAB10
+lab:			LAB11
+GOTO	  	  	LAB7
+lab:			LAB6
+lab:			LAB7
+plus	i	1	$18
+=	$18		i
+GOTO	  	  	LAB4
+lab:			LAB5
+==	s	0	$19
+BZ	  	  	LAB12
+prt	5		int
+prt		j	int
+=	0		i
+lab:			LAB14
+<=	i	n	$20
+BZ	  	  	LAB15
+prt	6		int
+geta	k	i	$21
+prt		$21	int
+plus	i	1	$22
+=	$22		i
+GOTO	  	  	LAB14
+lab:			LAB15
+prt	7		int
+GOTO	  	  	LAB13
+lab:			LAB12
+lab:			LAB13
+plus	j	1	$23
+=	$23		j
+GOTO	  	  	LAB2
+lab:			LAB3
+prt	8		int
+=	0		a
+=	0		i
+lab:			LAB16
+<	i	max_num	$24
+BZ	  	  	LAB17
+mul	a	i	$25
+=	$25		b
+mul	j	n	$26
+=	$26		c
+mul	a	i	$27
+=	$27		a
+plus	a	b	$28
+plus	$28	c	$29
+=	$29		a
+plus	i	1	$30
+=	$30		i
+GOTO	  	  	LAB16
+lab:			LAB17
+=	a		b
+=	0		i
+lab:			LAB18
+<	i	max_num	$31
+BZ	  	  	LAB19
+plus	b	i	$32
+=	$32		b
+plus	i	1	$33
+=	$33		i
+GOTO	  	  	LAB18
+lab:			LAB19
+prt	9		int
+prt		b	int
+prt	10		int
+=	0		h
+=	1		leap
+=	2		m
+lab:			LAB20
+<=	m	max_num	$34
+BZ	  	  	LAB21
+div	m	2	$35
+=	$35		k2
+=	2		i
+lab:			LAB22
+<=	i	k2	$36
+BZ	  	  	LAB23
+div	m	i	$37
+mul	$37	i	$38
+=	$38		x2
+PUSH			m
+PUSH			i
+call	mod		$39
+==	$39	0	$40
+BZ	  	  	LAB24
+=	0		leap
+GOTO	  	  	LAB25
+lab:			LAB24
+lab:			LAB25
+plus	i	1	$41
+=	$41		i
+GOTO	  	  	LAB22
+lab:			LAB23
+==	leap	1	$42
+BZ	  	  	LAB26
+prt	11		int
+prt		m	int
+plus	h	1	$43
+=	$43		h
+div	h	10	$44
+mul	$44	10	$45
+=	$45		x2
+==	x2	h	$46
+BZ	  	  	LAB28
+prt	12		int
+GOTO	  	  	LAB29
+lab:			LAB28
+lab:			LAB29
+GOTO	  	  	LAB27
+lab:			LAB26
+lab:			LAB27
+=	1		leap
+plus	m	1	$47
+=	$47		m
+GOTO	  	  	LAB20
+lab:			LAB21
+prt	13		int
+prt		h	int
+end			complete_num
+func	void		main
+int			n
+PUSH			5
+call	factorial		$48
+=	$48		n
+prt	14		int
+prt		n	int
+PUSH			5
+PUSH			10
+call	swap		
+PUSH			2
+call	complete_num		
+end			main

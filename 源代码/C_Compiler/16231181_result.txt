@@ -1,0 +1,38 @@
+// 16231181_result.txt
+// 假设从标准读入的三个整数值分别为a = 4, b = 100, c = 42
+0
+1
+1
+2
+4
+5
+9
+10
+16
+17
+25
+26
+36
+37
+49
+50
+64
+65
+21
+-2232
+True1
+True2
+testing if
+calculating factorial of 4
+24
+testing for
+5050
+testing while
+2247
+720
+successfully reach the playing func
+'_'
+'+'
+'+'
+1018
+

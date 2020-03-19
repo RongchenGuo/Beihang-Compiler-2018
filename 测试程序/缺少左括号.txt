@@ -1,0 +1,15 @@
+const int a1 = 1, a2 = 2;
+const int a3 = 3;
+const int a4 = 4;
+int a,b
+int c;
+int d;
+void main(){
+	a = a1;
+	b = a2;
+	c = a3;
+	d = a4;
+	printf(c);
+	printf(d);
+	printf(e);
+}

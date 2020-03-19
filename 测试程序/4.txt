@@ -1,0 +1,14 @@
+const int a = 10;
+int factorial(int n){
+	if(n == 1){
+		return (1);
+	}
+	else{
+		return (n * factorial(n-1));
+	}
+}
+void main(){
+	int ans;
+	ans = factorial(a);
+	printf(ans);
+}

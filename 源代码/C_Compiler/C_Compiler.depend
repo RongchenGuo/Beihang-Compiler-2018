@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1546178313 source:e:\课件小报\大学本科\编译技术\c_compiler\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"GlobVar.h"
+
+1546160435 e:\课件小报\大学本科\编译技术\c_compiler\globvar.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1546505255 source:e:\课件小报\大学本科\编译技术\16231181_郭容辰_申优\源代码\c_compiler\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"GlobVar.h"
+
+1546499803 e:\课件小报\大学本科\编译技术\16231181_郭容辰_申优\源代码\c_compiler\globvar.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

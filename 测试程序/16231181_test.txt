@@ -1,0 +1,136 @@
+// 16231181_test.txt
+// global constant declaration
+const int glob_const_int1 = 0622, glob_const_int2 = 1020;
+const char glob_const_char1 = '_', glob_const_char2 = 'f', glob_const_char3 = 'G';
+const int glob_const_int3 = -0213;
+const int glob_const_int4 = 9;
+const char glob_const_char4 = '*', glob_const_char5 = '+';
+
+// global variable declaration
+char glob_var_char, glob_var_array1[10];
+int glob_var_int1, glob_var_int2, glob_var_array2[9];
+
+// a function to calculate the factorial of n
+int factorial (int n){
+	if (n == 1)      return (1);
+	else    return (n*factorial(n-1));
+}
+
+// 返回值为char，无传入参数的函数
+char returnPlus{
+	return ('+');
+}
+
+// 返回值为int,无传入参数的函数
+int returnBirth{
+	int temp;
+	int vari;
+	vari = glob_const_int2;
+	temp = 002;
+	vari = temp + vari -temp*temp;
+	return (vari);
+}
+
+// 无返回值，有传入参数的函数
+void printchar (char ch){
+	printf(ch);
+	return;
+}
+
+// 无返回值，无传入参数的函数
+void playing{
+	printf("successfully reach the playing func");
+	return;
+}
+
+// 检测条件语句
+void testif (int n){
+	int ans;
+	printf("testing if");
+	if (n == 3){
+		ans = factorial(n);
+		printf("calculating the factorial of 3");
+		printf((ans));   //检验双括号是否当作一个
+	}
+	else if (n == 4){
+		ans = factorial(4);
+		printf("calculating the factorial of 4");
+		printf(ans);
+	}
+	else printf("the number is not 3 or 4");
+}
+
+// 检测for循环语句
+int testfor(int n){
+	int sum;
+	int i;
+	sum = 0;
+	printf("testing for");
+	for (i = 0; i <= n; i = i+1){
+		sum = sum + i;
+	}
+	return (sum);
+}
+
+// 检测while循环语句
+int testWhile( int n ){
+	int sum2;
+	int i,temp;
+	sum2 = 00100;
+	i = n;
+	temp = glob_const_int1;
+	printf("testing while");
+	while(i>0){
+		sum2 = sum2 - i;
+		i = i -1;
+	}
+	return (sum2 + temp*2);
+}
+
+void main(){
+	int array[9];
+	int i,temp;
+	char ch;
+	int x1;
+	int x2;
+	int x3;
+	int x4;
+	int a, b, c;
+	x1 = 63;
+	x2 = 9;
+	x3 = 2;
+	for (i=0; i<GloB_cOnST_int4; i=i+1){
+		// 检测赋值语句和循环语句
+		array[i] = i*i;
+		printf(array[i]);
+		//检测全局数组变量
+		glob_var_array2[i] = array[i] + 1;
+		printf(glob_var_array2[i]);
+	}
+	/*检测一下是否过滤掉了****注释**
+	继续检测中。。。***/
+	x4 = x1*(x3+1)/x2;			// 检测加减乘除法
+	printf(x4);
+	scanf(a, b, c);  			// 检测读语句
+	x4 = (x1 + 72)/x2 - testWhile(c);
+	printf(x4);
+	if (x1 != x2) printf ("True", 1);
+	if (x1 >= x3) printf("True", 2);
+	printf("! ~}|{abcABC<=+-$%&*()/");
+	testif(a);       			// 检测条件语句
+	temp = testfor(b);			// 检测for循环语句
+	printf(temp);				// 检测写语句
+	temp = testWhile(c);		// 检测while循环语句
+	printf(temp);
+	temp = factorial(6);		// 检测函数递归调用
+	printf(temp);
+	playing;					// 检测无返回值无传入参数的函数调用
+	printchar(glob_const_char1);		// 检测全局常量的调用
+	printchar(glob_const_char5);		// 检测无返回值有传入参数的函数调用
+	ch = returnPlus; 			// 检测返回值为char无传入参数的函数调用
+	printf(ch);
+	temp = returnBirth;			// 检测返回值为int无传入参数的函数调用
+	printf(temp);
+}
+	
+

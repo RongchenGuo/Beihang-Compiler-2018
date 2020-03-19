@@ -1,0 +1,14 @@
+int array1[10];
+char array2[9];
+
+char test1(int a){
+	return ('r');
+}
+
+
+void main(){
+	char ch;
+	int a;
+	a = 10;
+	array1[6] = test1(a+a*'r') + 't';
+}
