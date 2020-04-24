@@ -1,7 +1,11 @@
 # Beihang_Compiler_2018
 Compiling from Pascal to MIPS. Compiler implemented by C.
 
+<<<<<<< HEAD
 '''
+=======
+```
+>>>>>>> 17b4e3d0cec8eeab9652cf199624cd3aa6795018
 ＜加法运算符＞ ::= +｜-
 ＜乘法运算符＞  ::= *｜/
 ＜关系运算符＞  ::=  <｜<=｜>｜>=｜!=｜==
@@ -49,4 +53,8 @@ Compiling from Pascal to MIPS. Compiler implemented by C.
 （3）写语句中，字符串原样输出，单个字符类型的变量或常量输出字符，其他表达式按整型输出 
 （4）数组的下标从0开始
 （5）for语句先执行一次循环体中的语句再进行循环变量是否越界的测试
+<<<<<<< HEAD
 '''
+=======
+```
+>>>>>>> 17b4e3d0cec8eeab9652cf199624cd3aa6795018
